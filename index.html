@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Genshin Soulmate Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Landing Screen -->
+      <div id="landing" class="screen active">
+        <h1>Which Genshin Character Is Your Soulmate?</h1>
+        <button id="startBtn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz" class="screen">
+        <h2 id="questionText"></h2>
+        <div id="answers"></div>
+      </div>
+
+      <!-- Result Screen -->
+      <div id="result" class="screen">
+        <img id="resultImg" src="" />
+        <h2 id="resultName"></h2>
+        <p id="resultDesc"></p>
+        <h3 id="resultScore"></h3>
+        <button id="retryBtn">Retake Quiz</button>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
