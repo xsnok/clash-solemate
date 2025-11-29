@@ -1,14 +1,15 @@
 let currentQ = 0;
 
 let scores = {
-  hutao: 0,
-  zhongli: 0,
-  xiao: 0,
-  childe: 0,
-  raiden: 0,
-  miko: 0,
-  kazuha: 0,
-  nahida: 0,
+  princess: 0,
+  archerqueen: 0,
+  bandit: 0,
+  valkyrie: 0,
+  icewizard: 0,
+  wizard: 0,
+  megaknight: 0,
+  miner: 0,
+  minipekka: 0,
 };
 
 document.getElementById("startBtn").onclick = () => {
@@ -54,11 +55,19 @@ function loadQuestion() {
 }
 
 function finishQuiz() {
-  let best = "hutao";
+  // 1% chance of HOG RIDER
+  if (Math.random() < 0.01) {
+    showResult("hog", 100);
+    return;
+  }
+
+  // find top character
+  let best = "princess";
   for (let c in scores) {
     if (scores[c] > scores[best]) best = c;
   }
 
+  // compute compatibility score
   const maxPossible = questions.length * 2;
   const score = Math.floor(70 + (scores[best] / maxPossible) * 30);
 

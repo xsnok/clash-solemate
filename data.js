@@ -1,113 +1,128 @@
+// ---------------- CHARACTERS ----------------
+
 const characters = {
-  hutao: {
-    name: "Hu Tao",
-    img: "img/hutao.jpg",
+  princess: {
+    name: "Princess",
+    img: "img/princess.png",
     description:
-      "Mischievous, chaotic, and surprisingly heartfelt. You two would cause trouble and have fun doing it.",
+      "Elegant, deadly from afar, and loves causing chaos without lifting a finger. You adore someone stylish and dramatic.",
   },
-  zhongli: {
-    name: "Zhongli",
-    img: "img/zhongli.jpg",
+  archerqueen: {
+    name: "Archer Queen",
+    img: "img/archerqueen.png",
     description:
-      "Calm, wise, elegant. You value stability and deep connection — perfectly aligned with Rex Lapis himself.",
+      "Focused, powerful, and always in control. You love someone with deadly precision AND personality.",
   },
-  xiao: {
-    name: "Xiao",
-    img: "img/xiao.jpg",
+  bandit: {
+    name: "Bandit",
+    img: "img/bandit.png",
     description:
-      "Quiet, loyal, and intense. He would secretly treasure you more than he admits.",
+      "Fast, mysterious, and chaotic in a fun way. She dashes into your life and steals your heart.",
   },
-  childe: {
-    name: "Childe (Tartaglia)",
-    img: "img/childe.jpg",
+  valkyrie: {
+    name: "Valkyrie",
+    img: "img/valkyrie.png",
     description:
-      "A thrill-seeker who loves challenge and loyalty. You match his chaotic charm.",
+      "Loyal, grounded, and a total protector. She spins for you—literally.",
   },
-  raiden: {
-    name: "Raiden Shogun",
-    img: "img/raiden.jpg",
+  icewizard: {
+    name: "Ice Wizard",
+    img: "img/icewizard.png",
     description:
-      "Disciplined, powerful, and secretly soft. You bring her balance and humanity.",
+      "Chill, funny, and stylish. He slows everything down… including your heart rate.",
   },
-  miko: {
-    name: "Yae Miko",
-    img: "img/miko.jpg",
-    description:
-      "Clever, teasing, and elegant. You can handle her playful, cunning energy.",
+  wizard: {
+    name: "Wizard",
+    img: "img/wizard.png",
+    description: "Flashy, dramatic, and loud in the best way. FIREBALLLLL!!",
   },
-  kazuha: {
-    name: "Kazuha",
-    img: "img/kazuha.jpg",
+  megaknight: {
+    name: "Mega Knight",
+    img: "img/megaknight.png",
     description:
-      "A gentle, poetic soul. You two would share peaceful adventures and quiet romance.",
+      "Toxic? Maybe. Fun? Absolutely. He jumps into your life with 3000 pounds of affection.",
   },
-  nahida: {
-    name: "Nahida",
-    img: "img/nahida.jpg",
+  miner: {
+    name: "Miner",
+    img: "img/miner.png",
     description:
-      "Empathetic, nurturing, and wise. You match her gentle curiosity and emotional intelligence.",
+      "Sneaky, loyal, and low-key adorable. He travels across the map just to see you.",
   },
-  paimon: {
-    name: "PAIMON?!",
-    img: "img/paimon.jpg",
+  minipekka: {
+    name: "Mini P.E.K.K.A",
+    img: "img/minipekka.png",
     description:
-      "Looks like Paimon is YOUR soulmate. Emergency Food is now Emergency Lover????",
+      "PANCAKES!!! Sweet, loyal, and surprisingly aggressive. You match each other’s adorable chaos.",
+  },
+  hog: {
+    name: "Hog Rider",
+    img: "img/hogrider.png",
+    description:
+      "HOG RIDEEEEER!!! You got the 1% secret pull. Your life is now loud, chaotic, and amazing.",
   },
 };
 
+// ---------------- QUESTIONS ----------------
+
 const questions = [
   {
-    q: "Choose your vibe:",
+    q: "Pick your vibe:",
     answers: [
-      { text: "Calm & stable", add: ["zhongli", "kazuha"] },
-      { text: "Chaotic but lovable", add: ["hutao", "childe"] },
-      { text: "Smart introvert", add: ["xiao", "nahida"] },
-      { text: "Elegant troublemaker", add: ["miko", "raiden"] },
+      { text: "Elegant & dramatic", add: ["princess", "wizard"] },
+      { text: "Fast & chaotic", add: ["bandit", "minipekka"] },
+      { text: "Calm & collected", add: ["icewizard", "archerqueen"] },
+      { text: "Strong & protective", add: ["valkyrie", "megaknight"] },
     ],
   },
   {
     q: "What kind of partner do you want?",
     answers: [
-      { text: "Protective & loyal", add: ["xiao", "zhongli"] },
-      { text: "Playful & teasing", add: ["hutao", "miko"] },
-      { text: "Strong & disciplined", add: ["raiden"] },
-      { text: "Adventurous & free", add: ["kazuha", "childe"] },
+      { text: "Funny & unpredictable", add: ["wizard", "minipekka"] },
+      { text: "Mysterious & cool", add: ["bandit", "icewizard"] },
+      { text: "Loyal & dependable", add: ["valkyrie", "miner"] },
+      { text: "Confident & powerful", add: ["archerqueen", "megaknight"] },
     ],
   },
   {
     q: "Pick a date:",
     answers: [
-      { text: "Quiet café", add: ["nahida", "zhongli"] },
-      { text: "Night market adventure", add: ["hutao", "childe"] },
-      { text: "Moonlit cliffside", add: ["xiao", "kazuha"] },
-      { text: "Elegant shrine visit", add: ["miko", "raiden"] },
+      {
+        text: "Shooting arrows together (romantic)",
+        add: ["princess", "archerqueen"],
+      },
+      { text: "Sneaking around town", add: ["bandit", "miner"] },
+      { text: "Smashing stuff", add: ["megaknight", "minipekka"] },
+      { text: "Cozy, warm spell practice", add: ["wizard", "icewizard"] },
     ],
   },
   {
-    q: "Choose an element:",
+    q: "Choose an elixir cost for your date:",
     answers: [
-      { text: "Pyro", add: ["hutao"] },
-      { text: "Electro", add: ["raiden", "miko"] },
-      { text: "Anemo", add: ["kazuha", "xiao"] },
-      { text: "Dendro", add: ["nahida"] },
+      { text: "3 or 2 — fast & cheap", add: ["bandit", "minipekka", "miner"] },
+      { text: "4 — balanced", add: ["princess", "icewizard", "wizard"] },
+      {
+        text: "5+ — heavy spender",
+        add: ["megaknight", "valkyrie", "archerqueen"],
+      },
+      { text: "0 — I stole everything (lol)", add: ["bandit"] },
     ],
   },
   {
     q: "Pick a color palette:",
     answers: [
-      { text: "Warm oranges", add: ["hutao"] },
-      { text: "Deep purples", add: ["raiden", "miko"] },
-      { text: "Cool blues", add: ["childe"] },
-      { text: "Earth tones", add: ["zhongli", "kazuha"] },
+      { text: "Blue & Frosty", add: ["icewizard"] },
+      { text: "Pink & Royal", add: ["princess"] },
+      { text: "Orange & Fire", add: ["wizard", "valkyrie"] },
+      { text: "Black & Mysterious", add: ["bandit", "megaknight"] },
     ],
   },
   {
-    q: "What describes your personality?",
+    q: "What's your personality?",
     answers: [
-      { text: "Empathetic & kind", add: ["nahida"] },
-      { text: "Calm & quiet", add: ["xiao"] },
-      { text: "Wise & patient", add: ["zhongli"] },
-      { text: "Fun & chaotic", add: ["hutao", "childe"] },
+      { text: "Funny & sociable", add: ["wizard", "minipekka"] },
+      { text: "Calm & analytical", add: ["archerqueen", "icewizard"] },
+      { text: "Strong & dependable", add: ["valkyrie", "megaknight"] },
+      { text: "Sneaky & clever", add: ["bandit", "miner"] },
     ],
   },
 ];
