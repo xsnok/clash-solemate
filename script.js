@@ -55,19 +55,16 @@ function loadQuestion() {
 }
 
 function finishQuiz() {
-  // 1% chance of HOG RIDER
   if (Math.random() < 0.01) {
     showResult("hog", 100);
     return;
   }
 
-  // find top character
   let best = "princess";
   for (let c in scores) {
     if (scores[c] > scores[best]) best = c;
   }
 
-  // compute compatibility score
   const maxPossible = questions.length * 2;
   const score = Math.floor(70 + (scores[best] / maxPossible) * 30);
 

@@ -1,68 +1,65 @@
-// ---------------- CHARACTERS ----------------
-
 const characters = {
   princess: {
     name: "Princess",
-    img: "img/princess.png",
+    img: "img/princess.jpg",
     description:
-      "Elegant, deadly from afar, and loves causing chaos without lifting a finger. You adore someone stylish and dramatic.",
+      "Elegant, deadly from afar, and loves causing chaos without lifting a finger. You adore someone stylish and dramatic. (Art by Happy-1Cat!!)",
   },
   archerqueen: {
     name: "Archer Queen",
-    img: "img/archerqueen.png",
+    img: "img/archerqueen.jpg",
     description:
-      "Focused, powerful, and always in control. You love someone with deadly precision AND personality.",
+      "Focused, powerful, and always in control. You love someone with deadly precision AND personality. (Art by kaccha83!!)",
   },
   bandit: {
     name: "Bandit",
-    img: "img/bandit.png",
+    img: "img/bandit.webp",
     description:
-      "Fast, mysterious, and chaotic in a fun way. She dashes into your life and steals your heart.",
+      "Fast, mysterious, and chaotic in a fun way. She dashes into your life and steals your heart. (Art by TubbieGordito!!)",
   },
   valkyrie: {
     name: "Valkyrie",
     img: "img/valkyrie.png",
     description:
-      "Loyal, grounded, and a total protector. She spins for you—literally.",
+      "Loyal, grounded, and a total protector. She spins for you—literally. (Art by 5Kay!!)",
   },
   icewizard: {
     name: "Ice Wizard",
-    img: "img/icewizard.png",
+    img: "img/icewizard.webp",
     description:
-      "Chill, funny, and stylish. He slows everything down… including your heart rate.",
+      "Chill, funny, and stylish. He slows everything down… except for your heart rate ;). (Art by riad0077!! Ts is so cool) ",
   },
   wizard: {
     name: "Wizard",
-    img: "img/wizard.png",
-    description: "Flashy, dramatic, and loud in the best way. FIREBALLLLL!!",
+    img: "img/wizard.jpg",
+    description:
+      "Flashy, dramatic, and loud in the best way. FIREBALLLLL!! (Cosplay by KellyP)",
   },
   megaknight: {
     name: "Mega Knight",
-    img: "img/megaknight.png",
+    img: "img/megaknight.webp",
     description:
-      "Toxic? Maybe. Fun? Absolutely. He jumps into your life with 3000 pounds of affection.",
+      "Toxic? Maybe. Fun? Absolutely. He jumps into your life with 3000 pounds of affection! (Art by Finni_Kosmos!!)",
   },
   miner: {
     name: "Miner",
     img: "img/miner.png",
     description:
-      "Sneaky, loyal, and low-key adorable. He travels across the map just to see you.",
+      "Sneaky, loyal, and low-key adorable. He travels across the map just to see you. (Art by Schneiderpox!!)",
   },
   minipekka: {
     name: "Mini P.E.K.K.A",
-    img: "img/minipekka.png",
+    img: "img/minipekka.jpg",
     description:
-      "PANCAKES!!! Sweet, loyal, and surprisingly aggressive. You match each other’s adorable chaos.",
+      "PANCAKES!!! Sweet, loyal, and surprisingly aggressive. You match each other’s adorable chaos. (Art by IcyTamTam!!)",
   },
   hog: {
     name: "Hog Rider",
-    img: "img/hogrider.png",
+    img: "img/hogrider.jpg",
     description:
-      "HOG RIDEEEEER!!! You got the 1% secret pull. Your life is now loud, chaotic, and amazing.",
+      "HOG RIDEEEEER!!! You got the 1% secret pull. Your life is now loud, chaotic, and amazing. (art by oogly.art!!)",
   },
 };
-
-// ---------------- QUESTIONS ----------------
 
 const questions = [
   {
